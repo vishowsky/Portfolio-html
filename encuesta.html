@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="css/encuesta.css">
+    <meta charset="utf-8">
+</head>
+
+<body class="background" > 
+    <div >
+    <div class="card" id="div-form">
+    <div class="card-body"> 
+        <h1 id="title">
+
+            Formulario de encuesta
+
+        </h1>
+        <p id="description">muchas gracias por tomarte un tiempo para responder esto :D</p>
+        </p>
+        
+        <form id="survey-form">
+            <section id="section-name">
+            <label>
+                Nombre
+            </label>
+          
+            <input id="name" name="name" placeholder="ingrese su nombre" type="form-control" class=" form-control  default-input" required>
+        </section>
+            
+            <label for="Email" id="email-label">
+                Correo Electronico
+            </label>
+            <input id="email" name="email" placeholder="ingrese su Correo Electronico" type="email" class=" form-control  default-input"
+                pattern="[^ @]*@[^ @]*" required>
+            <br>
+            <label for="number" id="number-label">
+                Numero de telefono
+            </label>
+            <br>
+            <input type="number" name="number" min=000000000 max=999999999 id="number" placeholder="ingrese su numero telefonico" class=" form-control  default-input">
+            <br>
+            <label for="dropdown"> a que te dedicas actualmente? </label>
+            <br>
+            <select id="dropdown" name="dropdown" class="btn btn-primary-lg dropdown-toggle" id="dropdown">
+                <option value="">Seleccione una opcion</option>
+                <option value="">Estudiante</option>
+                <option value="">Trabajador a tiempo completo</option>
+                <option value="">Trabajador a tiempo parcial</option>
+                <option value="">Otros</option>
+                <option value="">Prefiere no decir</option>
+            </select>
+
+            <br>
+            
+            <label for="radiogroup" id="label-radio"> que tan conforme se encuentra con los anuncios de las paginas para adultos?</label>
+            bt
+            <div name="radiogroup" id="radiogroup" required>
+            <label>satisfecho</label>
+            <input type="radio" name="radio" value="satisfecho">
+            
+            
+            <label>regular</label>
+            <input type="radio" name="radio" value="regular">
+            
+            
+            <label>insatisfecho</label>
+            <input type="radio" name="radio" value="insatisfecho">
+            
+            <label>no lo sabe</label>
+            <input type="radio" name="radio" value="no lo sabe">
+            
+        </div>
+
+            <div class="form-group">
+                <label for="checkbox">
+                    ¿Que te gustaria agregar a la pagina?
+                </label>
+                <br>
+                <div id="checkboxes">
+                <label for="checkbox">
+                    <input class="input-checkbox" type="checkbox" name="checkbox" value="Mas contenido">
+                    Mas contenido </label>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox" class="input-checkbox" value="menosPublicidad">
+                    Menos publicidad</label>
+                </div>
+            </div>
+            <div>
+                <p for="comentarios">
+                    desea dejar algun comentario?
+                </p>
+                <textarea placeholder="Ingrese aqui un comentario" id="comentarios" class="input-textarea" name="comentarios">
+                </textarea>
+                <br>
+                <button type="submit" id="submit" class="btn btn-primary">
+                    Enviar
+            </div>
+        </div>
+    
+
+    </form>
+
+
+
+</div>
+
+
+
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>

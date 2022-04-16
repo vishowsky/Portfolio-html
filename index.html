@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  
-    <link rel="stylesheet" href="estilos.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-   
-    <nav class="nav" id="navbar">
-        <ul class="nav-list" id="nav-list">
-            <li><a id="nav-li" href="#welcome-section" id="">ACERCA DE</a> </li>
-            <li><a id="nav-li" href="" >HOLA</a> </li>
-            <li><a id="nav-li" href="#">ADIOS</a></li>
-        </ul>
-    </nav>
+  <head>
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <link rel="stylesheet" href="/css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="import" href="componentes/navbar.html">
+
+  </head>
+  <body>
+
+        <!-- Navbar del index-->
     
-    <section id="welcome-section">
-        <h1 id="nombre">Hola soy Vishowsky</h1>
-        <p id="parrafo" >y este es mi espacio</p>
-    </section>
-
-    <section id="projects" class="proyect-section">
-        <h2>proyectos</h2>
-        <div class="project">
-
-
-            
-            <a href="https://codepen.io/vishowsky/full/JjMrJOL" target="_blank" class="project-title">
-               <img src="https://es.wikipedia.org/wiki/HTML#/media/Archivo:HTML5_logo_and_wordmark.svg" class="project-img" alt="">
-
-               <p class="project-tile">
-                    pag tributo
-
-            </p>
-            </a>
-        </div>
-
+        <nav class="nav-bar" id="navbar">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"> </i>
+            </label>
+    
+            <label class="logo" for="">Vishowsky</label>
+            <ul>
+              <li><a  id="a-nav" href="#hp">inicio</a></li>
+              <li><a id="a-nav" href="">acerca de mi</a></li>
+              <li><a id="a-nav" href="">Contacto</a></li>
+<li><a id="a-nav" href="#profile-link">Redes</a></li>
+            </ul>
+          </nav>
         
-    </section>
-    <a id="profile-link" href="https://github.com/vishowsky" target="_blank">github</a>
+        <!-- Fin del navbar-->
 
-</body>
+    <section id="welcome-section">
+            <h1 id="parrafo">Bienvenido a mi espacio personal </h1>
+            
+            <span id="p-span"> Pagina en construccion :c</span>
+    </section>
+
+
+   <section id="projects">
+     <h1 id="hp">proyectos</h1>
+    <a class="project-tile" id="img-encuesta" target="_blank"href="encuesta.html"><img
+        width="370"
+        height="300"
+        id="img-e"
+        src="img/encuesta-icon-image.png" 
+        alt="Pagina encuesta" />
+      <img/> </a>
+    </section> 
+    
+    <section >
+      <a  id="profile-link" target="_blank" href="https://github.com/vishowsky?tab=repositories" >github </a>
+    </section>
+  </body>
 </html>

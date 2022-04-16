@@ -1,0 +1,50 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#img-e{
+    padding: 50px;
+  
+}
+
+#welcome-section{
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    
+    background-image: linear-gradient(100deg, #502c2c, #271616 90%);
+
+}
+#parrafo{
+    font-size: 4em;
+    color: #ffffff;
+  
+}
+span{
+    color: white;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 26ch;
+
+    animation: typing 2s step(26),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from{ width: 0}
+}
+@keyframes blink{
+    50% { border-color: transparent }
+}
