@@ -6,10 +6,7 @@
     box-sizing: border-box;
 }
 
-#img-e{
-    padding: 10px;
-    
-}
+
 
 #welcome-section{
 
@@ -26,17 +23,15 @@
 }
 
 #hp{
-    
-    display: inline;
-    text-align: center;
-    margin-bottom: 500px;
-    
+    color: white ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+ text-align: center;
+ background-image: linear-gradient(10deg, #502c2c, #271616 90%);
 }
-
 #projects{
-    
+    font-size: xx-large;
     display: flex;
-    background-color:gray ;
+    background-image: linear-gradient(100deg, #502c2c, #271616 90%);
     align-items: center;
     justify-content: center;
 }
@@ -53,16 +48,17 @@ span{
     white-space: nowrap;
     border-right: 4px solid;
     width: 26ch;
-
-    animation: typing 2s step(26),
-    blink .5s infinite step-end alternate;
-    overflow: hidden;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+    
 }
 
-@keyframes typing{
-    from{ width: 0}
-}
+
 @keyframes blink{
+    0%{
+            border-color: white;
+    }
     50% { border-color: transparent }
 }
 @media (max-width: 858px){
